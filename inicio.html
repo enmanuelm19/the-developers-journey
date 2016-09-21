@@ -2,6 +2,7 @@
 <html>
 <title>The developer's journey</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -62,7 +63,10 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <ul class="w3-navbar" id="myNavbar" style="color: white">
-    <li><a href="#" class="w3-padding-large" >Inicio</a></li>
+    <li><a href="#top" class="w3-padding-large" >Inicio</a></li>
+    <li><a href="#about" class="w3-padding-large">Acerca</a></li>
+    <li><a href="#portafolio" class="w3-padding-large">Portafolio</a></li>
+    <li><a href="#contacto" class="w3-padding-large">Contacto</a></li>
     <li class="w3-hide-small w3-right">
       <a href="#" class="w3-padding-large w3-hover-red"><i class="fa fa-search"></i></a>
     </li>
@@ -70,7 +74,7 @@ body, html {
 </div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-opacity w3-display-container">
+<div class="bgimg-1 w3-opacity w3-display-container" id="top">
   <div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">El <span class="w3-hide-small">Viaje del</span> Desarrollador</span>
   </div>
@@ -99,7 +103,7 @@ body, html {
     </div>
   </div>
   <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-section">
+    <div class="w3-col m6 w3-center w3-section">functionName
       <p><b>Tony Suarez</b></p><br>
       <img src="http://i.imgur.com/1e3bX1ct.jpg" class="w3-circle" alt="Tony Suarez">
     </div>
@@ -114,12 +118,12 @@ body, html {
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-light-grey w3-wide">PORTFOLIO</span>
+    <span class="w3-xxlarge w3-text-dark-grey w3-wide" >PORTFOLIO</span>
   </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64">
+<div class="w3-content w3-container w3-padding-64" id="portafolio">
   <h3 class="w3-center">Nuestro Trabajo</h3>
   <p class="w3-center"><em>Aqui encuentras parte de nuestro trabajo<br> Click para ver mejor ;)</em></p><br>
 
@@ -130,33 +134,33 @@ body, html {
     </div>
 
     <div class="w3-col m3">
-      <img src="img_p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="http://i.imgur.com/f957OqTm.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="img_p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="http://i.imgur.com/lvfiPd1m.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="img_p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="http://i.imgur.com/AfEh0rWm.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
   </div>
 
   <div class="w3-row-padding w3-center w3-section">
     <div class="w3-col m3">
-      <img src="img_p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="http://i.imgur.com/4gbzif8m.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="img_p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="http://i.imgur.com/vltWNPSm.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="img_p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="http://i.imgur.com/mCm4pgWm.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="img_p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="http://i.imgur.com/vFF3VP3m.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
   </div>
 </div>
@@ -177,7 +181,7 @@ body, html {
 </div>
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64">
+<div class="w3-content w3-container w3-padding-64" id="contacto">
   <h3 class="w3-center">Donde encontrarnos</h3>
   <p class="w3-center"><em>En la red!  ;)</em></p>
 
@@ -209,7 +213,7 @@ body, html {
 
 <!-- Footer -->
 <footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black">
-  <p>El viaje del desarrollador <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
+  <p>El viaje del desarrollador</p>
 </footer>
 
 <!-- Add Google Maps -->
@@ -239,7 +243,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 // Modal Image Gallery
 function onClick(element) {
-  document.getElementById("img01").src = element.src;
+  document.getElementById("img01").src = element.src;http://i.imgur.com/f957OqTm.png
   document.getElementById("modal01").style.display = "block";
 }
 
@@ -255,6 +259,60 @@ function myFunction() {
         navbar.style = "color: white";
     }
 }
+
+window.scrollTo = (function () {
+  var timer, start, factor;
+
+  return function (target, duration) {
+    var offset = window.pageYOffset,
+        delta  = target - window.pageYOffset;
+    duration = duration || 300;
+    start = Date.now();
+    factor = 0;
+
+    if( timer ) {
+      clearInterval(timer);
+    }
+
+    function step() {
+      var y;
+      factor = (Date.now() - start) / duration;
+      if( factor >= 1 ) {
+        clearInterval(timer);
+        factor = 1;
+      }
+      y = factor * delta + offset;
+      window.scrollBy(0, y - window.pageYOffset);
+    }
+
+    timer = setInterval(step, 10);
+    return timer;
+  };
+}());
+
+var aboutLink = document.querySelector('[href="#about"]');
+aboutLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    scrollTo(document.getElementById('about').offsetTop);
+}, false);
+
+var portafolioLink = document.querySelector('[href="#portafolio"]');
+portafolioLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    scrollTo(document.getElementById('portafolio').offsetTop);
+}, false);
+
+var contactoLink = document.querySelector('[href="#contacto"]');
+contactoLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    scrollTo(document.getElementById('contacto').offsetTop);
+}, false);
+
+var topLink = document.querySelector('[href="#top"]');
+topLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    scrollTo(document.getElementById('top').offsetTop);
+}, false);
 </script>
 
 </body>
